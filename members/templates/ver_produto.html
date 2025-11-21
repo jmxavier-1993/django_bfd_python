@@ -1,0 +1,17 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meu Projeto Django</title>
+    {% tailwind_css %} 
+    </head>
+<body>
+    <h1 class="text-3xl font-bold underline text-blue-600">
+        {{nome}}, Você está no ver produto
+    </h1>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
+
+
